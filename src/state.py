@@ -29,6 +29,12 @@ class ResultadoBusqueda(BaseModel):
     url: str
     contenido: str
     score: Optional[float] = None
+    fecha: Optional[str] = Field(
+        default=None,
+        description="Fecha de publicación de la fuente, si Tavily la provee "
+        "(campo published_date). Puede venir vacía -- no todas las fuentes "
+        "la reportan.",
+    )
 
 
 class ResultadoEvaluacion(BaseModel):

@@ -5,3 +5,4 @@ tavily-python
 pydantic
 python-dotenv
 pytest
+tenacity
